@@ -28,7 +28,7 @@ This project is a single-page-application (SPA) created with React. It hosts inf
  - "CSS Hover Image Effects" template @ https://codepen.io/nxworld.
 
 ## Github:
-[https://github.com/itsmeadriana](https://github.com/itsmeadriana)
+[https://github.com/itsmeadriana/SPA_Portfolio](https://github.com/itsmeadriana/SPA_Portfolio)
 
 ## License
 [Link](https://choosealicense.com/licenses/mit/)
