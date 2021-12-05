@@ -43,7 +43,7 @@ function Portfolio() {
       }
 
     return(
-        <div className="flex-row">
+        <div className="flex-row portfolioWrapper">
             {projects.map((project, idx) => (
                 <Project currentProject={project}/>
             ))}

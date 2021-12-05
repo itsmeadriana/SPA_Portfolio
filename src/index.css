@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #EF8A97;
+  --secondary-color: #FBE0E4;
+  --tertiary-color:#88CFD2;
+  --accent-color1: #F09A44;
+  --accent-color2: #CCE8C0;
+  --accent-color3: #5ABBBE;
+  --accent-color4:#D5F5F6;
+  --main-background-color: #F9DBE6;
+  --shadow-color: #EFA0BD;
+  --highlight-color: #F5EDED;
+  --text-color: #515B4B;
+}
 
 * {
   box-sizing: border-box;
@@ -7,18 +20,6 @@ html,
 body {
   min-height: 100%;
 }
-
-/* body {
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 18px;
-  letter-spacing: .1em;
-
-} */
-
-
 
 h1 {
   font-size: 2.25rem;
@@ -74,7 +75,6 @@ button {
   border-radius: .5rem;
   cursor: pointer;
   margin: 0 1px;
-  /* background-color: var(--secondary); */
 }
 
 button:hover {
@@ -85,10 +85,6 @@ button[disabled] {
   cursor: default;
   opacity: .8;
 }
-
-/* img {
-  max-width: 100%;
-} */
 
 span[role="img"] {
   cursor: default;
@@ -210,7 +206,7 @@ a {
 }
 
 .card {
-  width: 25%;
+  max-width: 33.333vw;
   text-align: center;
 }
 
@@ -244,7 +240,7 @@ a {
 .modalTitle {
 	font-size: 18px;
 	font-weight: 600;
-	margin-bottom: 25px;
+	margin-bottom: 2px;
 }
 
 button {

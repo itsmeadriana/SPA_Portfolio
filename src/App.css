@@ -28,7 +28,7 @@ main {
   font-family: Montserrat;
 }
 
-.headerNav {
+.bookend {
   position:-webkit-sticky;
   position: sticky;
 }
@@ -78,24 +78,6 @@ header nav ul li a:hover {
   background:none;
   color:var(--tertiary-color);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* #about {
-  font-weight: bolder;
-  color:var(--tertiary-color);
-  text-shadow:var(--shadow-color);
-  margin: 10;
-  line-height: 1.5;
-  font-family: 'Londrina Shadow';
-} */
 
 h2 {
   font-size: 44px;
@@ -190,17 +172,32 @@ button {
 
 /* Portfolio */
 
+.portfolioWrapper {
+justify-content: space-around;
+}
+
+.project-title {
+  font-weight: thin;
+  color: var(--shadow-color);
+}
+
 .projects-img {
   width: 33%;
 }
 
+.projectLink {
+  color: var(--tertiary-color);
+  font-weight: thin;
+  font-style: oblique;
+}
+
 /* Resume */
 
-#c {
+/* #c {
   width: 100vw;
   height: 100vh;
   display: block;
-}
+} */
 
 .pdfDownload a {
   color:var(--primary-color);
@@ -225,6 +222,10 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   text-decoration: none;
+}
+
+a .lenikauffman {
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 980px) {
@@ -275,6 +276,7 @@ footer {
   .projects-img {
       width: 30%;
       height: auto;
+      border-style: solid 1px var(--main-background-color);
   }
 
   .project-desc {

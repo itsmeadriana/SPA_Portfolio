@@ -27,8 +27,8 @@ function App() {
 
   return (
     <section className="App">
-        <Header className="headerNav" />
-        <Nav className="nav headerNav"
+        <Header className="bookend" />
+        <Nav className="nav bookend"
           sections={sections}
           setCurrentSection={setCurrentSection}
           currentSection={currentSection}>
