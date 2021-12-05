@@ -1,0 +1,48 @@
+{
+  "name": "spa-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "flexbox-react": "^4.4.0",
+    "loader": "^2.1.1",
+    "mdb-react-ui-kit": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-native": "^0.66.3",
+    "react-pdf": "^5.5.0",
+    "react-scripts": "4.0.3",
+    "rsuite": "^5.2.3",
+    "web-vitals": "^1.1.2",
+    "webfont": "^11.2.26"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-rsuite": "^4.0.1"
+  }
+}
