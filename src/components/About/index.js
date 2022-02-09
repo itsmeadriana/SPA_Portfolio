@@ -1,6 +1,7 @@
 import React from "react";
 import avatar from "../../assets/images/Avatars/Home-Office.png";
 // import Flexbox from 'flexbox-react';
+import contactAvatar from '../../assets/images/Avatars/sitting-and-singing.png';
 
 
 function About() {
@@ -15,6 +16,29 @@ function About() {
                     </p>
                 </div>
             </section>
+            <div className="contactImgWrapper box">
+                <div>
+            <h5 className="contact-me-text"> If you like what you see, let's connect! I'm still growing as a developer and I'd love to
+                        help you
+                        grow your project, too!</h5>
+                        <br />
+                        <ul className="contactList"><h5> Find me on: </h5>
+                            <li><h5>
+                                <a href="https://www.linkedin.com/in/adriananieves">
+                                Linked-In
+                                </a>
+                                </h5>
+                            </li>
+                            <li><h5>
+                                <a href="https://www.github.com/itsmeadriana">
+                                GitHub
+                                </a>
+                                </h5>
+                            </li>
+                        </ul>
+                    </div>
+                <img className="contact-img" src={contactAvatar} alt="sitting and singing" />
+            </div>
         </div>
 
     );

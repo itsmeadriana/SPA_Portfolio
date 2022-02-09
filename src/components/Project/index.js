@@ -23,7 +23,7 @@ function Project({currentProject}) {
                 <p className="project-desc px-2">{description}</p>
                 <ul className="container">
                     <li><a href={link}>
-                    <img className="project-img container py-2 px-2" src={require(`../../assets/images/webImages/${normalizeProjectName}.png`).default} /></a>
+                    <img className="project-img container py-2 px-2" src={require(`../../assets/images/webImages/${normalizeProjectName}.png`).default} alt="project-screenshot"/></a>
                     </li>
                     <br />
                     <li><a className="projectLink my-3" href={repo}>{name} Github Repository</a></li>

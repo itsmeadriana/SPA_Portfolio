@@ -36,7 +36,7 @@ function Contact() {
 
     return(
         <div className="container">
-            <div className="contactImgWrapper box">
+            <div className="contactImgWrapper box flex-row">
                 <div>
             <h5 className="contact-me-text"> If you like what you see, let's connect! I'm still growing as a developer and I'd love to
                         help you
@@ -57,9 +57,9 @@ function Contact() {
                             </li>
                         </ul>
                     </div>
-                <img className="contact-img" src={contactAvatar} />
+                <img className="contact-img" src={contactAvatar} alt="sitting and singing"/>
             </div>
-            <div className="formWrapper container">
+            {/* <div className="formWrapper container">
                 <form id="contact-form" onSubmit={handleSubmit}>
                     <div className="inputRow">
                         <label htmlFor="name" defaultValue={name} name="name">Name: </label>
@@ -80,7 +80,7 @@ function Contact() {
                     </div>
                     <button type="submit">Submit</button>
                 </form>
-            </div>
+            </div> */}
 
         </div>
     )
