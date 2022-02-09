@@ -5,7 +5,7 @@ function Footer() {
         <footer className="bookend">
             <h6>Made with 💖 by Adriana</h6>
                 <p>
-                    &copy; 2021 Adriana Nieves
+                    &copy; 2022 Adriana Nieves
                 </p>
                 <p>
                     Illustrations by <a class="lenikauffman" href="https://www.lenikauffman.com/">Leni Kauffman</a>.

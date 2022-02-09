@@ -9,34 +9,20 @@ function About() {
         <div>
             <section className="about-me">
                 <img src={avatar} className="mx-2" style={{ width: "45%" }} alt="avatar"></img>
-                <div className="about-me-text box">
+                <div className="about-me text box">
                     <h2>My name is Adriana</h2>
                     <p>
-                       and I'm a professional-opera-singer-turned-programmer. I'd like to be a resource to fellow performers in the arts community to help individuals and organizations represent themselves to their audiences at their best. </p><p> I'm a first generation Latinx to a Nicaraguan mother and Puerto Rican father, so I understand the importance of making art accessible, diverse, universal, <i>and</i> personal.</p><p>As artists, your passion is storytelling; let me help you tell yours.
+                       and I'm a professional-opera-singer-turned-programmer. I'd like to be a resource to fellow performers in the arts community to help individuals and organizations represent themselves to their audiences at their best. </p><p>I understand the importance of making art accessible, diverse, universal, <i>and</i> personal.</p><p>As artists, your passion is storytelling; let me help you tell yours.
                     </p>
                 </div>
             </section>
             <div className="contactImgWrapper box">
-                <div>
-            <h5 className="contact-me-text"> If you like what you see, let's connect! I'm still growing as a developer and I'd love to
-                        help you
-                        grow your project, too!</h5>
-                        <br />
-                        <ul className="contactList"><h5> Find me on: </h5>
-                            <li><h5>
-                                <a href="https://www.linkedin.com/in/adriananieves">
-                                Linked-In
-                                </a>
-                                </h5>
-                            </li>
-                            <li><h5>
-                                <a href="https://www.github.com/itsmeadriana">
-                                GitHub
-                                </a>
-                                </h5>
-                            </li>
-                        </ul>
-                    </div>
+            <div className="more-about-me text box">
+            <h2 className="more-about-me"> I am full-stack certified!</h2>
+            <p className="more-about-me">
+            Six months and over 30 projects later, I got to know my way around web development. Undoubtedly, I have a preference for frontend work, but that doesn't mean I can't create some awesome endpoints for you.
+            </p>
+            </div>
                 <img className="contact-img" src={contactAvatar} alt="sitting and singing" />
             </div>
         </div>

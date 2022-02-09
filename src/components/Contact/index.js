@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils';
-import contactAvatar from '../../assets/images/Avatars/sitting-and-singing.png';
+import contactAvatar from '../../assets/images/Avatars/wateringcan.png';
 
 function Contact() {
     const [formState, setFormState] = useState({name: '', email: '', message: ''});
@@ -37,8 +37,8 @@ function Contact() {
     return(
         <div className="container">
             <div className="contactImgWrapper box flex-row">
-                <div>
-            <h5 className="contact-me-text"> If you like what you see, let's connect! I'm still growing as a developer and I'd love to
+            <div className="contact-me text box">
+            <h5 className="contact-me-text text"> If you like what you see, let's connect! I'm still growing as a developer and I'd love to
                         help you
                         grow your project, too!</h5>
                         <br />

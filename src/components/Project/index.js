@@ -7,6 +7,7 @@ function Project({currentProject}) {
        description,
        link,
        repo,
+       about
    } = currentProject;
 
    function fileNameHandler(projectName) {
@@ -25,6 +26,8 @@ function Project({currentProject}) {
                     <li><a href={link}>
                     <img className="project-img container py-2 px-2" src={require(`../../assets/images/webImages/${normalizeProjectName}.png`).default} alt="project-screenshot"/></a>
                     </li>
+                    <br />
+                    <li className='project-about'>{about}</li>
                     <br />
                     <li><a className="projectLink my-3" href={repo}>{name} Github Repository</a></li>
                 </ul>
