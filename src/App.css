@@ -220,7 +220,7 @@ flex-wrap: wrap;
 
 .resumeBody {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
@@ -484,9 +484,9 @@ a .lenikauffman {
       text-align: center;
   }
 
-  nav span {
+  /* nav span {
 
-  }
+  } */
 
   .about-me-text {
       font-size: 16px;

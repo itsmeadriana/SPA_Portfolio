@@ -28,7 +28,7 @@ function Resume(){
 
     <div className="resumeBody">
         <div className="resume-img-wrapper">
-            <img className="resume-avatar" src= {resumeAvatar} />
+            <img className="resume-avatar" src= {resumeAvatar} alt="watering-can" />
         </div>
         <div className="resumeWrapper" id="c">
             <Document className="resumeDoc" id="c"

@@ -1,7 +1,6 @@
 import React from "react";
 import avatar from "../../assets/images/Avatars/Home-Office.png";
 // import Flexbox from 'flexbox-react';
-import contactAvatar from '../../assets/images/Avatars/sitting-and-singing.png';
 
 
 function About() {

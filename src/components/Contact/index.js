@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils';
+// import React, { useState } from 'react';
+// import { validateEmail } from '../../utils';
 import contactAvatar from '../../assets/images/Avatars/working-together.png';
 
 function Contact() {
