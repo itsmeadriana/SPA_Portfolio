@@ -16,7 +16,7 @@ function About() {
                     </p>
                 </div>
             </section>
-            <div className="contactImgWrapper box">
+            {/* <div className="contactImgWrapper box">
             <div className="more-about-me text box">
             <h2 className="more-about-me"> I am full-stack certified!</h2>
             <p className="more-about-me">
@@ -24,7 +24,7 @@ function About() {
             </p>
             </div>
                 <img className="contact-img" src={contactAvatar} alt="sitting and singing" />
-            </div>
+            </div> */}
         </div>
 
     );

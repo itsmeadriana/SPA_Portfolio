@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import '../../index.css';
 import resume from '../../assets/spa_resume.pdf';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import resumeAvatar from '../../assets/images/Avatars/wateringcan.png';
 
 function Resume(){
     const [numPages, setNumPages] = useState(null);
@@ -25,14 +26,18 @@ function Resume(){
     }
     return (
 
+    <div className="resumeBody">
+        <div className="resume-img-wrapper">
+            <img className="resume-avatar" src= {resumeAvatar} />
+        </div>
         <div className="resumeWrapper" id="c">
             <Document className="resumeDoc" id="c"
                 file={resume}
                 onDocumentLoadSuccess={onDocumentLoadSuccess}
             >
-            <Page pageNumber={pageNumber} />
+            <Page pageNumber={pageNumber} wrap={false} />
             </Document>
-            <div>
+            <div className="resume-nav">
                 <p>
                     Page {pageNumber || (numPages ? 1: '--')} of 2
                 </p>
@@ -54,7 +59,8 @@ function Resume(){
             <br />
             <h5 className="pdfDownload">[Download a PDF copy of my resume <a href={resume}>here</a>.]</h5>
         </div>
-    )
+    </div>
+)
 }
 
 export default Resume;

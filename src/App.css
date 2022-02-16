@@ -17,11 +17,8 @@ main {
 	max-width: 90%;
   padding: 50px 30px;
   font-family: Montserrat;
-  height: calc(
-    100vh
-    - header
-    - footer
-  );
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 * {
@@ -33,10 +30,10 @@ main {
   font-family: Montserrat;
 }
 
-.bookend {
+/* .bookend {
   position:-webkit-sticky;
   position: sticky;
-}
+} */
 
 header {
   top: 0;
@@ -45,6 +42,7 @@ header {
   justify-content: center;
   padding: 20px 20px;
   background-color: var(--primary-color);
+  min-width: 100vw;
 }
 
 header h1 {
@@ -66,12 +64,12 @@ nav {
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: stretch;
 }
 
 nav ul li {
-  padding: 15px 20px;
+  padding: 11px 15px;
   font-weight: lighter;
   line-height: 1.7;
   font-size: 1.75vw;;
@@ -86,7 +84,6 @@ header nav ul li a:hover {
 
 h2 {
   font-size: 44px;
-  /* font-family: 'Londrina Shadow'; */
   line-height: 1.7;
   border-bottom: 3px solid;
 }
@@ -144,7 +141,6 @@ button {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-
   border-radius: 10px;
   align-items: center;
 }
@@ -155,9 +151,13 @@ button {
 }
 
 .contact-me.text {
-  background-color: var(--accent-color2);
-  border-bottom:3px solid var(--tertiary-color);
-  border-left: 3px solid  var(--tertiary-color);
+  /* background-color: var(--accent-color2); */
+  border-bottom:3px solid var(--accent-color2);
+  border-left: 3px solid  var(--accent-color2);
+  border-width: 10px;
+  border-style:double;
+  border-right: none;
+  border-top: none;
   color: var(--text-color);
 }
 
@@ -168,16 +168,16 @@ button {
 .contactImgWrapper {
   display: flex;
   align-items: center;
-  flex-direction: row;
+  justify-content: center;
   align-content: flex-start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .contact-img {
   height: auto;
-  max-width: 40%;
+  max-width: 100%;
   margin: 0 auto;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .formWrapper {
@@ -197,6 +197,7 @@ button {
 
 .portfolioWrapper {
 justify-content: space-around;
+flex-wrap: wrap;
 }
 
 .project-title {
@@ -217,10 +218,34 @@ justify-content: space-around;
 
 /* Resume */
 
-/* #c {
-  width: 100vw;
-  height: 100vh;
+.resumeBody {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+
+#c {
+  /* width: 65vw;
+  height: 65vh; */
   display: block;
+}
+
+.resume-img-wrapper {
+  max-width: 30vh;
+}
+
+.resume-avatar {
+  max-width: 25vw;
+}
+
+canvas {
+  max-width: 100vw;
+  height:auto;
+}
+
+/* .resumeDoc {
+  max-width: 50vw;
 } */
 
 .pdfDownload a {
@@ -237,7 +262,7 @@ justify-content: space-around;
 /* Footer */
 
 footer {
-  padding: 25px 35px;
+  padding: 20px;
   background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
@@ -288,8 +313,12 @@ a .lenikauffman {
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      text-align: center;
+      text-align: start;
       width: 100%;
+  }
+
+  .about-me p {
+    text-align: start;
   }
 
   .projects-intro {
@@ -321,9 +350,37 @@ a .lenikauffman {
       margin-bottom: 20px;
       font-size: 4vw;
   }
+
+  .card {
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 684px) {
+  .resume-nav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pdfDownload {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  nav ul li {
+    font-size:2.75vw;
+  }
+
+  ul.flex-row {
+    justify-content: center;
+  }
+
   .projects-intro {
       flex: nowrap;
   }
@@ -363,7 +420,16 @@ a .lenikauffman {
   .singing-img {
       max-width: 50%;
   }
+
+  .resumeBody {
+    flex-direction: column;
+  }
+
+  .resume-nav {
+
+  }
 }
+
 
 @media screen and (max-width: 575px) {
   .about-me-img {
@@ -402,16 +468,24 @@ a .lenikauffman {
       font-size: 12px;
   }
 
+  h5 {
+    font-size: 1rem;
+  }
+
   footer p {
       font-size: 11px;
   }
 
-  .nav ul {
+  nav ul {
       flex-wrap: wrap;
       flex-direction: column;
       justify-content: center;
       align-content: center;
       text-align: center;
+  }
+
+  nav span {
+
   }
 
   .about-me-text {
@@ -457,4 +531,11 @@ a .lenikauffman {
   .contact-me-text ul li a {
       margin: auto 45;
   }
+
+  .pdfDownload {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 }
