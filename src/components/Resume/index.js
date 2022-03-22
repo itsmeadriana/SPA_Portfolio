@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import '../../index.css';
-import resume from '../../assets/spa_resume.pdf';
+import resume from '../../assets/documents/spa_resume.pdf';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import resumeAvatar from '../../assets/images/Avatars/wateringcan.png';
 
@@ -10,7 +10,7 @@ function Resume(){
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
-        setPageNumber(1,2);
+        setPageNumber(1,2,3);
     }
 
     function changePage(offset) {
@@ -39,7 +39,7 @@ function Resume(){
             </Document>
             <div className="resume-nav">
                 <p>
-                    Page {pageNumber || (numPages ? 1: '--')} of 2
+                    Page {pageNumber || (numPages ? 1: '--')} of 3
                 </p>
                 <button className="pdfBtn"
                     type="button"
@@ -50,7 +50,7 @@ function Resume(){
                 </button>
                 <button className="pdfBtn"
                     type="button"
-                    disabled={pageNumber >= 2}
+                    disabled={pageNumber >= 3}
                     onClick={nextPage}
                 >
                     Next
