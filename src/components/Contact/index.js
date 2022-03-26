@@ -1,8 +1,9 @@
 import React from 'react';
 import contactAvatar from '../../assets/images/Avatars/working-together.png';
-import OpenCertificateModal from '../CertificateModal';
+import certificate from '../../assets/documents/certificate.pdf';
 
 function Contact() {
+
 
 
     return(
@@ -10,7 +11,10 @@ function Contact() {
 
             <div className="contactImgWrapper box flex-row">
             <div className="contact-me text box">
-                <OpenCertificateModal />
+            <h2 className="contact-header" >
+                <a className="pdfDownload" href={ certificate } target="_blank" rel="noreferrer">
+                I am full-stack certified!</a>
+            </h2>
 
             <p> Six months and over 30 projects later, I got to know my way around web development. Undoubtedly, I have a preference for frontend work, but that doesn't mean I can't create some awesome endpoints for you.</p>
             <br />

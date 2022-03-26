@@ -137,9 +137,12 @@ button {
 
 /* Contact */
 
-div .modal-body canvas {
+div .modal-body canvas .react-pdf__Page {
   border:#5ABBBE solid 3px;
-  display: flex;
+  width: unset;
+  height: unset;
+  max-width: 60vw;
+  max-height:45vh;
 }
 
 .contactme {

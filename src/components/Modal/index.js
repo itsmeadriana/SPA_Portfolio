@@ -1,7 +1,8 @@
 import React from 'react';
 import { Modal, Button, Col } from 'react-bootstrap';
-import Certificate from '../Certificate/index'
-import certificate from '../../assets/documents/certificate.pdf'
+import Certificate from '../Certificate/index';
+import certificate from '../../assets/documents/certificate.pdf';
+// import certImg from '../../assets/images/misc/certificate-image';
 // import { render } from 'express/lib/response';
 
 function CertificateModal(props) {
@@ -14,19 +15,17 @@ function CertificateModal(props) {
         >
             <Modal.Header closeButton>
               <Modal.Title id="certificate-title">
-                  Proof
+                  Proof of Credentials
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <Col fluid className='certificateContactWrapper container'>
-                    <Certificate className="certImg"/>
+              <Col className='certificateContactWrapper container'>
+              <p>
+                 That's 25 CEUs right <a className="pdfDownload" href={ certificate } target="_blank" rel="noreferrer">here!</a>
+                </p>
               </Col>
             </Modal.Body>
             <Modal.Footer>
-                <p>
-                  Open in new tab
-                    <a className="pdfDownload" href={ certificate } target="_blank" rel="noreferrer">here.</a>
-                </p>
                 <br />
                 <Button onClick={props.onHide}>I accept your proof</Button>
             </Modal.Footer>
@@ -41,12 +40,14 @@ function OpenCertificateModal(props) {
         <>
             <Button variant="link " onClick={() =>
             setModalShow(true)}>
-                <h2 className="contact-header" > I am full-stack certified!</h2>
+                <h2 className="contact-header" >
+                <a className="pdfDownload" href={ certificate } target="_blank" rel="noreferrer">
+                I am full-stack certified!</a></h2>
             </Button>
-            <CertificateModal
+            {/* <CertificateModal
                 show={modalShow}
                 onHide={() => setModalShow(false)}
-            />
+            /> */}
         </>
     )
 }
