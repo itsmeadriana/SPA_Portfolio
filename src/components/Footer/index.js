@@ -8,7 +8,7 @@ function Footer() {
                     &copy; 2022 Adriana Nieves
                 </p>
                 <p>
-                    Illustrations by <a class="lenikauffman" href="https://www.lenikauffman.com/">Leni Kauffman</a>.
+                    Illustrations by <a className="lenikauffman" href="https://www.lenikauffman.com/">Leni Kauffman</a>.
                 </p>
         </footer>
     );

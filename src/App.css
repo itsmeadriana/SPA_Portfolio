@@ -137,6 +137,11 @@ button {
 
 /* Contact */
 
+div .modal-body canvas {
+  border:#5ABBBE solid 3px;
+  display: flex;
+}
+
 .contactme {
   display: flex;
   flex-wrap: nowrap;
