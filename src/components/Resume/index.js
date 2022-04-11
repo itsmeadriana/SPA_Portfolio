@@ -39,7 +39,7 @@ function Resume(){
             </Document>
             <div className="resume-nav">
                 <p>
-                    Page {pageNumber || (numPages ? 1: '--')} of 3
+                    Page {pageNumber || (numPages ? 1: '--')} of 2
                 </p>
                 <button className="pdfBtn"
                     type="button"
@@ -50,7 +50,7 @@ function Resume(){
                 </button>
                 <button className="pdfBtn"
                     type="button"
-                    disabled={pageNumber >= 3}
+                    disabled={pageNumber >= 2}
                     onClick={nextPage}
                 >
                     Next
