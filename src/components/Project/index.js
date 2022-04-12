@@ -23,13 +23,13 @@ function Project({currentProject}) {
                 <p className="modalTitle">Built with the following:</p>
                 <p className="project-desc px-2">{description}</p>
                 <ul className="container">
-                    <li><a href={link}>
+                    <li><a href={link} target="_blank" rel="noreferrer">
                     <img className="project-img container py-2 px-2" src={require(`../../assets/images/webImages/${normalizeProjectName}.png`).default} alt="project-screenshot"/></a>
                     </li>
                     <br />
                     <li className='project-about'>{about}</li>
                     <br />
-                    <li><a className="projectLink my-3" href={repo}>{name} Github Repository</a></li>
+                    <li><a className="projectLink my-3" target="_blank" rel="noreferrer" href={repo}>{name} Github Repository</a></li>
                 </ul>
             <br />
         </section>
