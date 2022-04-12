@@ -52,7 +52,7 @@ header h1 {
   text-shadow:var(--shadow-color);
   margin: 0;
   line-height: 1.5;
-  font-family: 'Birthstone Bounce';
+  font-family: 'Limelight';
   justify-content: center;
 }
 
@@ -145,6 +145,15 @@ div .modal-body canvas .react-pdf__Page {
   max-height:45vh;
 }
 
+h2 a {
+  color:#EFA0BD;
+}
+
+h2 a:hover {
+  font-size:larger;
+  color:#EF8A97;
+}
+
 .contactme {
   display: flex;
   flex-wrap: nowrap;
@@ -171,6 +180,18 @@ div .modal-body canvas .react-pdf__Page {
 
 .contactList a {
   color:var(--text-color);
+}
+
+img.icon {
+  max-width: 3vw;
+  max-height: 3vh;
+  padding: 3px;
+}
+
+img.icon-contact {
+  max-width: 6vw;
+  max-height: 6vh;
+  padding: 6px;
 }
 
 .contactImgWrapper {

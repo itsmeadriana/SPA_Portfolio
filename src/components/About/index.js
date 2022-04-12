@@ -1,7 +1,8 @@
 import React from "react";
 import avatar from "../../assets/images/Avatars/Home-Office.png";
 // import Flexbox from 'flexbox-react';
-
+import certificate from '../../assets/documents/certificate.pdf';
+// import contactAvatar from '../../assets/images/Avatars/working-together.png';
 
 function About() {
     return (
@@ -9,10 +10,18 @@ function About() {
             <section className="about-me">
                 <img src={avatar} className="mx-2" style={{ width: "45%" }} alt="avatar"></img>
                 <div className="about-me text box">
-                    <h2>hello.</h2>
+                    <h2>My name is Adriana.</h2>
                     <p>
-                       My name is Adriana and I'm a professional-opera-singer-turned-programmer. I'd like to be a resource to fellow performers in the arts community to help individuals and organizations represent themselves to their audiences at their best. </p><p>I understand the importance of making art accessible, diverse, universal, <i>and</i> personal.</p><p>As artists, your passion is storytelling; let me help you tell yours.
+                       And I build websites.</p>
+                        <p>I'm a pandemically-displaced opera singer turned programmer via The Coding Bootcamp at the University of Texas - Austin. Six months and over 30 projects later, I know my way around web development. It wasn't easy, but neither is singing Mozart.</p>
+            <p>If you like what you see, let's connect! I'm constantly growing as a developer and am always looking for new technologies and programming languages to learn and add to my repertoire.</p>
+
+                    <p>
+                       P.S. <a className="pdfDownload" href={ certificate } target="_blank" rel="noreferrer">
+                            I am full-stack certified!
+                        </a>
                     </p>
+                    {/* <marquee>Please hire me.</marquee> */}
                 </div>
             </section>
             {/* <div className="contactImgWrapper box">
