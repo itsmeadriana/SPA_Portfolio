@@ -1,6 +1,5 @@
 import React from 'react';
 import contactAvatar from '../../assets/images/Avatars/working-together.png';
-import certificate from '../../assets/documents/certificate.pdf';
 import gitIcon from '../../assets/images/socialMediaIcons/gitHubIcon.png';
 import linkedIcon from '../../assets/images/socialMediaIcons/linkedInIcon.png';
 import gmailIcon from '../../assets/images/socialMediaIcons/gmailIcon.png'
